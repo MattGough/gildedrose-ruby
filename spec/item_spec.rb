@@ -16,8 +16,6 @@ describe Item do
   end
 
   describe '#to_s' do
-    it { is_expected.to respond_to :to_s }
-
     it 'returns a string of the attributes combined' do
       expect(item.to_s).to eq("Item1, 20, 10")
     end
